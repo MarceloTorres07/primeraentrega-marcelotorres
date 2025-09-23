@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liceo Rayen Mapu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-100">
+
+  <!-- HEADER -->
+  <header class="bg-black text-white">
+  <div class="container mx-auto flex justify-between items-center py-3 px-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="assets/image/inicio/images.png" alt="Logo" class="h-20" />
+      <span class="font-bold text-lg">Liceo Rayen Mapu</span>
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Menú horizontal (escritorio) -->
+    <nav class="hidden md:flex space-x-3 font-medium relative z-50">
+      <a href="index.html" class="px-3 py-2 hover:text-yellow-400">INICIO</a>
+
+      <!-- INSTITUCIÓN -->
+      <div class="relative group">
+        <button class="px-3 py-2 hover:text-yellow-400">INSTITUCIÓN</button>
+        <ul class="absolute top-full left-0 hidden group-hover:flex hover:flex flex-col pointer-events-auto w-max bg-black text-white mt-1 rounded shadow-lg z-50">
+          <li><a href="historia.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">Historia</a></li>
+          <li><a href="equipo directivo.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">Equipo Directivo</a></li>
+        </ul>
+      </div>
+
+      <!-- ÁREA H.C -->
+      <div class="relative group">
+        <button class="px-3 py-2 hover:text-yellow-400">ÁREA H.C</button>
+        <ul class="absolute top-full left-0 hidden group-hover:flex hover:flex flex-col pointer-events-auto w-max bg-black text-white mt-1 rounded shadow-lg z-50">
+          <li><a href="plan de estudio-1-.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">1° y 2° medio</a></li>
+          <li><a href="plan de estudio-2-.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">3° y 4° medio</a></li>
+        </ul>
+      </div>
+
+      <!-- ÁREA TÉCNICA -->
+      <div class="relative group">
+        <button class="px-3 py-2 hover:text-yellow-400">ÁREA TÉCNICA</button>
+        <ul class="absolute top-full left-0 hidden group-hover:flex hover:flex flex-col pointer-events-auto w-max bg-black text-white mt-1 rounded shadow-lg z-50">
+          <li><a href="gastronomia.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">Gastronomía</a></li>
+          <li><a href="construccion.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">Construcción</a></li>
+        </ul>
+      </div>
+
+      <!-- TALLERES -->
+      <div class="relative group">
+        <button class="px-3 py-2 hover:text-yellow-400">TALLERES</button>
+        <ul class="absolute top-full left-0 hidden group-hover:flex hover:flex flex-col pointer-events-auto w-max bg-black text-white mt-1 rounded shadow-lg z-50">
+          <li><a href="PTU.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">PTU</a></li>
+          <li><a href="complementarios.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">Complementarios</a></li>
+          <li><a href="deportivos.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">Selecciones deportivas</a></li>
+        </ul>
+      </div>
+
+      <!-- ÁREA AMBIENTAL -->
+      <div class="relative group">
+        <button class="px-3 py-2 hover:text-yellow-400">ÁREA AMBIENTAL</button>
+        <ul class="absolute top-full left-0 hidden group-hover:flex hover:flex flex-col pointer-events-auto w-max bg-black text-white mt-1 rounded shadow-lg z-50">
+          <li><a href="brigada ecologica.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">Brigada Ecológica</a></li>
+          <li><a href="reciclaje.html" class="px-4 py-2 whitespace-nowrap hover:text-yellow-400 transition">Reciclaje</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Menú vertical (móvil) -->
+  <nav id="mobile-menu" class="hidden md:hidden bg-black text-white px-4 py-4 space-y-4 text-sm">
+    <div>
+      <h6 class="uppercase font-bold text-yellow-400 mb-2">Inicio</h6>
+      <a href="index.html" class="block pl-2 hover:text-yellow-300">Página principal</a>
+    </div>
+
+    <div>
+      <h6 class="uppercase font-bold text-yellow-400 mb-2">Institución</h6>
+      <a href="historia.html" class="block pl-2 hover:text-yellow-300">Historia</a>
+      <a href="equipo directivo.html" class="block pl-2 hover:text-yellow-300">Equipo Directivo</a>
+    </div>
+
+    <div>
+      <h6 class="uppercase font-bold text-yellow-400 mb-2">Área H.C</h6>
+      <a href="plan de estudio-1-.html" class="block pl-2 hover:text-yellow-300">1° y 2° medio</a>
+      <a href="plan de estudio-2-.html" class="block pl-2 hover:text-yellow-300">3° y 4° medio</a>
+    </div>
+
+    <div>
+      <h6 class="uppercase font-bold text-yellow-400 mb-2">Área Técnica</h6>
+      <a href="gastronomia.html" class="block pl-2 hover:text-yellow-300">Gastronomía</a>
+      <a href="construccion.html" class="block pl-2 hover:text-yellow-300">Construcción</a>
+    </div>
+
+    <div>
+      <h6 class="uppercase font-bold text-yellow-400 mb-2">Talleres</h6>
+      <a href="PTU.html" class="block pl-2 hover:text-yellow-300">PTU</a>
+      <a href="complementarios.html" class="block pl-2 hover:text-yellow-300">Complementarios</a>
+      <a href="deportivos.html" class="block pl-2 hover:text-yellow-300">Selecciones deportivas</a>
+    </div>
+
+    <div>
+      <h6 class="uppercase font-bold text-yellow-400 mb-2">Área Ambiental</h6>
+      <a href="brigada ecologica.html" class="block pl-2 hover:text-yellow-300">Brigada Ecológica</a>
+      <a href="reciclaje.html" class="block pl-2 hover:text-yellow-300">Reciclaje</a>
+    </div>
+  </nav>
+</header>
+
+
+
+  <!-- MAIN -->
+<main class="container mx-auto px-4 py-6">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+    
+    <!-- Contenido principal -->
+    <div class="md:col-span-3">
+      <section class="relative rounded-lg shadow-lg overflow-hidden h-[600px] bg-cover bg-center" style="background-image: url('../public/assets/image/menu/contru.jpg');">
+        <div class="bg-black bg-opacity-60 p-10 h-full flex flex-col justify-center">
+          <h3 class="text-center text-3xl font-bold text-white mb-6">Área Técnica de Construcción</h3>
+
+          <p class="text-white text-lg leading-relaxed">
+            El área técnica de Construcción del Liceo Rayen Mapu se enfoca en la formación de estudiantes con conocimientos y habilidades
+            para desempeñarse en el sector de la construcción, con una especialización particular en las Terminaciones de la Construcción.
+          </p>
+
+          <p class="text-white text-lg leading-relaxed mt-4">
+            Esta especialidad es clave para la industria, ya que se encarga de los acabados finales de una obra, que determinan su calidad y funcionalidad.
+          </p>
+
+          <p class="text-white text-lg leading-relaxed mt-4">
+            Los estudiantes aprenden técnicas de revestimiento, pintura, instalación de cerámicas, pisos flotantes y otros elementos que aportan valor estético y técnico a las edificaciones.
+          </p>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- Calendario -->
+<div class="bg-white bg-opacity-40 p-6 rounded-lg shadow-lg w-full md:w-72 mx-auto md:mx-0 mt-6">
+  <h6 id="calendar-title" class="text-center font-bold mb-3 text-base">Calendario</h6>
+  <table class="w-full border border-gray-300 text-center text-sm">
+    <thead class="bg-gray-800 text-white">
+      <tr>
+        <th class="p-2">L</th><th class="p-2">Ma</th><th class="p-2">Mi</th>
+        <th class="p-2">J</th><th class="p-2">V</th><th class="p-2">S</th><th class="p-2">D</th>
+      </tr>
+    </thead>
+    <tbody id="calendar-body"></tbody>
+  </table>
+</div>
+
+    </div>
+  </main>
+
+   <!-- FOOTER -->
+<footer class="bg-black text-white py-6 mt-10">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+    <div>
+      <h5 class="uppercase font-bold">Liceo Rayen Mapu</h5>
+      <p>© 2025 Web. Todos los derechos reservados.</p>
+      <p>Dirección: Calle Ejemplo 123, Quellón</p>
+      <p>Horario: Lun–Vie, 08:00–17:00</p>
+    </div>
+    <div>
+      <h5 class="uppercase font-bold">Contacto</h5>
+      <p>Teléfono: <a href="tel:+56652681788" class="text-yellow-400">(65) 268 1788</a></p>
+      <p>Correo: <a href="mailto:direccionliceorayenmapu@gmail.com" class="text-yellow-400">direccionliceorayenmapu@gmail.com</a></p>
+    </div>
+    <div>
+      <h5 class="uppercase font-bold">Síguenos</h5>
+      <a href="https://www.instagram.com/liceorayenmapu" target="_blank">
+        <img src="assets/image/instagram.png" alt="Instagram" class="w-6 h-6 inline-block" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="assets/js/script.js"></script>
+<script src="assets/js/menu.js"></script>
+</body>
+</html>

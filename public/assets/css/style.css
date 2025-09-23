@@ -1,0 +1,252 @@
+html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+    .dropdown-menu .dropdown-item {
+  color: #a1a0a0 !important; /* Texto blanco */
+}
+
+html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+    .calendar th, .calendar td {
+      width: 14.28%;
+      height: 40px;
+      font-size: 0.8rem;
+      vertical-align: middle;
+      padding: 4px;
+    }
+    .today {
+      background-color: #ffc107;
+      font-weight: bold;
+      border: 2px solid #000;
+    }
+    .sidebar {
+      position: sticky;
+      top: 20px;
+    }
+
+    .hover-highlight:hover {
+  background-color: #0d6efd !important; /* Azul Bootstrap */
+  color: rgb(255, 255, 255) !important;
+}
+.dropdown-menu {
+  background-color: transparent !important;
+}
+
+.dropdown-item {
+  color: rgb(255, 255, 255) !important;
+  transition: color 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: transparent !important;
+  color: #ffffff !important; /* amarillo Bootstrap para resaltar */
+}
+
+.fondo-index {
+  background-image: url('../image/liceofondo2.jpg'); /* Ajusta la ruta si es necesario */
+  background-size: cover;       /* Cubre todo el área */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-attachment: scroll; /* Efecto parallax opcional */
+}
+
+/*his */
+.fondo-seccion {
+  background-image: url('../image/fondo.jpg'); /* Ajusta la ruta */
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 100vh; /* Ocupa toda la altura de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* gas */
+.fondo-gas {
+  background-image: url('../image/gastronomia.jpg'); /* Ajusta la ruta */
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 100vh; /* Ocupa toda la altura de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* contru */
+.fondo-con {
+  background-image: url('../image/contru.jpg'); /* Ajusta la ruta */
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 100vh; /* Ocupa toda la altura de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* ptu */
+
+.taller-ptu {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.85); /* fondo claro semitransparente */
+  /* border-left: 5px solid #0d6efd; */ /* ← esta línea fue eliminada */
+}
+
+
+
+
+/* complemen */
+
+.card-taller {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.card-taller::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* oscurece la imagen */
+  z-index: 1;
+}
+
+.card-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+
+/* depor */
+
+.card-deporte {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.card-deporte::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* oscurece la imagen */
+  z-index: 1;
+}
+
+.card-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+
+/* brigada */
+
+.fondo-brig {
+  background-image: url('../image/brigada.jpg'); /* Ajusta la ruta */
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 100vh; /* Ocupa toda la altura de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* reci */
+
+.fondo-reci {
+  background-image: url('../image/reci.jpg'); /* Ajusta la ruta */
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 100vh; /* Ocupa toda la altura de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+
+/* Fondo semitransparente para el texto */
+.fondo-caja {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+
+.fondo-seccion .row {
+  align-items: flex-start;
+}
+
+.sidebar {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+
+.card.bg-dark-noticia {
+  background-color: #000;       /* fondo negro */
+  color: #fff;                  /* texto blanco */
+  border: none;                 /* opcional: sin borde */
+}
+
+.card.bg-dark-noticia .btn-outline-warning {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+
+.card.bg-dark-noticia .btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+
+
+
+
