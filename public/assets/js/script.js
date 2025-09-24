@@ -1,4 +1,4 @@
-// calendario.js
+// calendario
 document.addEventListener("DOMContentLoaded", function () {
   const calendarBody = document.getElementById("calendar-body");
   const calendarTitle = document.getElementById("calendar-title");

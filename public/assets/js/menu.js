@@ -1,3 +1,4 @@
+//Menu responsivo
 document.addEventListener('DOMContentLoaded', function () {
   const toggleButton = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
